@@ -45,7 +45,7 @@ function Sidebar({ handleLogout, user }) {
     
   return (
     <div>
-      <div className="sidebar">
+      <div className="sidebar ">
         <TwitterIcon className="sidebar__twitterIcon" />
         <CustomeLink to="/home/feed">
           <SidebarOptions active Icon={HomeIcon} text="Home" />
@@ -71,7 +71,7 @@ function Sidebar({ handleLogout, user }) {
         <CustomeLink to="/home/more">
           <SidebarOptions Icon={MoreIcon} text="More" />
         </CustomeLink>
-        <Button variant="outlined" className="sidebar__tweet" fullWidth>
+        <Button variant="outlined" className="sidebar__tweet " fullWidth>
           Tweet
         </Button>
       </div>

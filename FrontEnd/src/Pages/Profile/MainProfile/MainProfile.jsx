@@ -56,24 +56,6 @@ const MainProfile = ({ user }) => {
         const url = res.data.data.display_url;
         setImages(url);
         setIsLoading(false);
-        
-    //     if (url) {
-    //       fetch(`http://localhost:5000/userUpdates/${user?.email}`, {
-    //         method: "PATCH",
-    //         headers: {
-    //           "content-type": "application/json",
-    //         },
-    //         body: JSON.stringify(userCoverImage),
-    //       })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //           console.log("done", data);
-    //         });
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     setIsLoading(false);
       });
   };
   
@@ -96,28 +78,6 @@ const MainProfile = ({ user }) => {
         setImages(url);
         setIsLoading(false);
 
-        // const userProfileImage = {
-        //   email: user?.email,
-        //   profileImage: url,
-        // };
-
-    //     if (url) {
-    //       fetch(`http://localhost:5000/userUpdates/${user?.email}`, {
-    //         method: "PATCH",
-    //         headers: {
-    //           "content-type": "application/json",
-    //         },
-    //         body: JSON.stringify(userProfileImage),
-    //       })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //           console.log("done", data);
-    //         });
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     setIsLoading(false);
       });
   };
   

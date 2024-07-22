@@ -11,7 +11,7 @@ const Modal = ({ changeIsOpen, url, change }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleUploadImage = () => {
-    const userCoverImage = {
+    const userImage = {
       email: user?.email,
       [change]: url,
     };
@@ -22,7 +22,7 @@ const Modal = ({ changeIsOpen, url, change }) => {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify(userCoverImage),
+        body: JSON.stringify(userImage),
       })
         .then((res) => res.json())
         .then((data) => {
